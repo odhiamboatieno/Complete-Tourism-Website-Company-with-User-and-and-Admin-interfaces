@@ -37,7 +37,7 @@
 <div class="header">
 	<div class="container">
 		<div class="logo wow fadeInDown animated" data-wow-delay=".5s">
-			<a href="index.php">MUNGLO<span>ADVENTURES</span></a>	
+			<a href="index.php">Odhiambo Atieno<span>ADVENTURES</span></a>	
 		</div>
 	
 		<div class="lock fadeInDown animated" data-wow-delay=".5s"> 
