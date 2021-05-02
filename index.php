@@ -6,7 +6,7 @@ include('includes/config.php');
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>MungloAdventures</title>
+<title>SkyKing Tours</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!-- Start WOWSlider.com HEAD section -->
@@ -21,12 +21,13 @@ include('includes/config.php');
 <link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 <link href="css/font-awesome.css" rel="stylesheet">
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/styles.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/font-awesome.css" rel="stylesheet"> 
 <link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen">
 <link href="css/easy-responsive-tabs.css" rel='stylesheet' type='text/css'/>
 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
 <link rel="stylesheet" href="css/jquery-ui.css" />
+<link href="css/styles.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/us.css" rel="stylesheet" type="text/css" media="all" />
 <script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>
 <!-- Custom Theme files -->
 <script src="js/jquery-1.12.0.min.js"></script>
@@ -45,25 +46,23 @@ include('includes/config.php');
 <!-- Start WOWSlider.com BODY section -->
 <div id="wowslider-container1">
 <div class="ws_images"><ul>
-		<li><img src="data1/images/adventurealpsamazing552785.jpg" alt="adventure-alps-amazing-552785" title="adventure-alps-amazing-552785" id="wows1_0"/></li>
-		<li><img src="data1/images/adventurecoupledaylight1319829.jpg" alt="adventure-couple-daylight-1319829" title="adventure-couple-daylight-1319829" id="wows1_1"/></li>
-		<li><img src="data1/images/illiacherednychenko178496unsplash.jpg" alt="illia-cherednychenko-178496-unsplash" title="Welcome To MungloAdventures" id="wows1_2"/></li>
-		<li><img src="data1/images/nemanjao716613unsplash.jpg" alt="nemanja-o-716613-unsplash" title="Adventourous places" id="wows1_3"/></li>
-		<li><img src="data1/images/brightcountrysidedawn302804.jpg" alt="bright-countryside-dawn-302804" title="Fair prices" id="wows1_4"/></li>
-		<li><img src="data1/images/beachbeautifulblue279574.jpg" alt="beach-beautiful-blue-279574" title="The Best services ever" id="wows1_5"/></li>
-		<li><a href="http://mungloadventures.co.ke"><img src="data1/images/jeffchabot107321unsplash.jpg" alt="jquery slider" title="We are ever willing to serve you" id="wows1_6"/></a></li>
-		<li><img src="data1/images/joshuaearle569652unsplash.jpg" alt="joshua-earle-569652-unsplash" title="Come One come all" id="wows1_7"/></li>
+		<li><img src="data1/images/1.jpg" alt="1" title="1" id="wows1_0"/></li>
+		<li><img src="data1/images/2.jpg" alt="2" title="2" id="wows1_1"/></li>
+		<li><img src="data1/images/3.jpg" alt="3" title="3" id="wows1_2"/></li>
+		<li><img src="data1/images/6.jpg" alt="6" title="6" id="wows1_3"/></li>
+		<li><img src="data1/images/h1.jpg" alt="h1" title="h1" id="wows1_4"/></li>
+		<li><a href="#"><img src="data1/images/0.jpg" alt="css image slider" title="0" id="wows1_5"/></a></li>
+		<li><img src="data1/images/4.jpg" alt="4" title="4" id="wows1_6"/></li>
 	</ul></div>
 	<div class="ws_bullets"><div>
-		<a href="#" title="adventure-alps-amazing-552785"><span>1</span></a>
-		<a href="#" title="adventure-couple-daylight-1319829"><span>2</span></a>
-		<a href="#" title="illia-cherednychenko-178496-unsplash"><span>3</span></a>
-		<a href="#" title="nemanja-o-716613-unsplash"><span>4</span></a>
-		<a href="#" title="bright-countryside-dawn-302804"><span>5</span></a>
-		<a href="#" title="beach-beautiful-blue-279574"><span>6</span></a>
-		<a href="#" title="jeff-chabot-107321-unsplash"><span>7</span></a>
-		<a href="#" title="joshua-earle-569652-unsplash"><span>8</span></a>
-	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">bootstrap carousel</a> by WOWSlider.com v8.8</div>
+		<a href="#" title="1"><span>1</span></a>
+		<a href="#" title="2"><span>2</span></a>
+		<a href="#" title="3"><span>3</span></a>
+		<a href="#" title="6"><span>4</span></a>
+		<a href="#" title="h1"><span>5</span></a>
+		<a href="#" title="0"><span>6</span></a>
+		<a href="#" title="4"><span>7</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="#"></a> </div>
 <div class="ws_shadow"></div>
 </div>	
 <script type="text/javascript" src="engine1/wowslider.js"></script>
@@ -98,6 +97,7 @@ foreach($results as $result)
 					<h6>Package Type : <?php echo htmlentities($result->PackageType);?></h6>
 					<p><b>Package Location :</b> <?php echo htmlentities($result->PackageLocation);?></p>
 					<p><b>Features</b> <?php echo htmlentities($result->PackageFetures);?></p>
+					<p><b>Remaining Space</b> <?php echo htmlentities($result->capacity);?></p>
 				</div>
 				<div class="col-md-3 room-right wow fadeInRight animated" data-wow-delay=".5s">
 					<h5>USD <?php echo htmlentities($result->PackagePrice);?></h5>
@@ -113,23 +113,85 @@ foreach($results as $result)
 </div>
 			<div class="clearfix"></div>
 	</div>
+<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
+						<h2>Our Team</h2>
+						<p>Meet our highly qualified professional team of experts</p>
+					</div>
+				
+				</div>
+				<div class="row">
+					<div class="col-md-3 text-center animate-box">
+						<div class="staff-entry">
+							<img class="rounded-circle" src="images/team1.png" alt="Generic placeholder image" width="100" height="100">
+							<div class="desc">
+								<h3>Mary Kimani</h3>
+								<span>CEO</span>
+								<p></p>
+								<p>
+								
+									</ul>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 text-center animate-box">
+						<div class="staff-entry">
+							<img class="rounded-circle" src="images/team4.png" alt="Generic placeholder image" width="100" height="100">
+							<div class="desc">
+								<h3>George Orwa</h3>
+								<span>Director</span>
+								<p></p>
+								<p>
+									
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 text-center animate-box">
+						<div class="staff-entry">
+							<img class="rounded-circle" src="images/team3.png" alt="Generic placeholder image" width="100" height="100">
+							<div class="desc">
+								<h3>Robert Njiri</h3>
+								<span>Director</span>
+								<p></p>
+								<p>
+									
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 text-center animate-box">
+						<div class="staff-entry">
+							<img class="rounded-circle" src="images/team2.png" alt="Generic placeholder image" width="100" height="100">
+							<div class="desc">
+								<h3>Steve Githuku</h3>
+								<span>Tour Consultant</span>
+								<p></p>
+								<p>
+									
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-
+			</div>
+		</div>
 
 <!--- routes ---->
 <div class="routes">
 	<div class="container">
 		<div class="col-md-4 routes-left wow fadeInRight animated" data-wow-delay=".5s">
 			<div class="rou-left">
-			<a href="#"><i class="fa fa-user"></i></a>
-				
+				<a href="#"><i class="glyphicon glyphicon-list-alt"></i></a>
 			</div>
 			<div class="rou-rgt wow fadeInDown animated" data-wow-delay=".5s">
-				<h3>80000+ Handled</h3>
+				<h3>80000</h3>
 				<p>Enquiries</p>
-				
 			</div>
-						
 				<div class="clearfix"></div>
 		</div>
 		<div class="col-md-4 routes-left">
@@ -137,7 +199,7 @@ foreach($results as $result)
 				<a href="#"><i class="fa fa-user"></i></a>
 			</div>
 			<div class="rou-rgt">
-				<h3>1900+ Active</h3>
+				<h3>1900</h3>
 				<p>Regestered users</p>
 			</div>
 				<div class="clearfix"></div>
@@ -147,7 +209,7 @@ foreach($results as $result)
 				<a href="#"><i class="fa fa-ticket"></i></a>
 			</div>
 			<div class="rou-rgt">
-				<h3> More than 7,00,000</h3>
+				<h3>700,000+</h3>
 				<p>Booking</p>
 			</div>
 				<div class="clearfix"></div>
@@ -220,19 +282,18 @@ $error="Something went wrong. Please try again";
 }
 
 ?>
+
 			</div>
 		</div>
 		<div class="col-lg-6 col-md-6 col-sm-6 contact-w3-agile1" data-aos="flip-right">
 			<h4>Connect With Us</h4>
-			<p class="contact-agile1"><strong>Phone :</strong>+254722659828</p>
-			<p class="contact-agile1"><strong>Email :</strong> <a href="mailto:info@MungloAdventures.co.ke">info@MungloAdventures.co.ke</a></p>
-			<p class="contact-agile1"><strong>Our Offices are at :</strong> Ngong Road Nazarene Complex</p>
+			<p class="contact-agile1"><strong>Phone :</strong>+254722976480, +25441849051, +254207856880</p>
+			<p class="contact-agile1"><strong>Email :</strong> <a href="mailto:skykingtoursandtravel@gmail.com">skykingtoursandtravel@gmail.com</a></p>
+			<p class="contact-agile1"><strong>Our Offices are at :</strong> MOUNTAIN MALL, SECOND FLOOR C11</p>
 																
 					<div class="social-bnr-agileits footer-icons-agileinfo">
 				<ul class="social-icons3">
 								
-								
-							</ul>
 			</div>
 			<div class="mapouter"><div class="gmap_canvas"><iframe width="300" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=Jomo%20Kenyatta%20international%20airport&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="http://www.oneneo.epizy.com">Map By Odhiambo TOMMY</a></div><style>.mapouter{text-align:right;height:200px;width:300px;}.gmap_canvas {overflow:hidden;background:none!important;height:200px;width:300px;}</style></div>
 </section>
@@ -306,5 +367,4 @@ $error="Something went wrong. Please try again";
 						});
 			</script>
 </body>
-<?php include('embed.php'); ?>
 </html>

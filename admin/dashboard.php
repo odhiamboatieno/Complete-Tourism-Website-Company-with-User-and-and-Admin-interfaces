@@ -10,7 +10,7 @@ else{
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Odhiambo Atieno-  Adventures| Admin Dashboard</title>
+<title>Sky King Admin Dashboard</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -123,6 +123,10 @@ $cnt3=$query3->rowCount();
 						<div class="clearfix"></div>
 				</div>
 
+
+
+		
+				</div>
 		<div class="four-grids">
 					<div class="col-md-3 four-grid">
 						<div class="four-w3ls">

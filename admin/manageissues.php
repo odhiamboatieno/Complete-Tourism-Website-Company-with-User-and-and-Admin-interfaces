@@ -30,7 +30,7 @@ $msg="Enquiry  successfully read";
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Odhiambo Atieno-  Adventures| Admin manage Issues</title>
+<title>Sky King Admin manage Issues</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -159,7 +159,7 @@ foreach($results as $result)
 								<td width="50"><?php echo htmlentities($result->PostingDate);?></td>
 			
 
-<td><a href="javascript:void(0);" onClick="popUpWindow('http://localhost/tms/admin/updateissue.php?iid=<?php echo ($result->id);?>');">View </a>
+<td><a href="javascript:void(0);" onClick="popUpWindow('http://localhost/Odhiambo/admin/updateissue.php?iid=<?php echo ($result->id);?>');">View </a>
 </td>
 
 </tr>

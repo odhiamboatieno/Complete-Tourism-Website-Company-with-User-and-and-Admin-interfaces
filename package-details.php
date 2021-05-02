@@ -6,15 +6,15 @@ if(isset($_POST['submit2']))
 {
 $pid=intval($_GET['pkgid']);
 $useremail=$_SESSION['login'];
-$fromdate=$_POST['fromdate'];
+$select_date=$_POST['select_date'];
 $todate=$_POST['todate'];
 $comment=$_POST['comment'];
 $status=0;
-$sql="INSERT INTO tblbooking(PackageId,UserEmail,FromDate,ToDate,Comment,status) VALUES(:pid,:useremail,:fromdate,:todate,:comment,:status)";
+$sql="INSERT INTO tblbooking(PackageId,UserEmail,select_date,ToDate,Comment,status) VALUES(:pid,:useremail,:select_date,:todate,:comment,:status)";
 $query = $dbh->prepare($sql);
 $query->bindParam(':pid',$pid,PDO::PARAM_STR);
 $query->bindParam(':useremail',$useremail,PDO::PARAM_STR);
-$query->bindParam(':fromdate',$fromdate,PDO::PARAM_STR);
+$query->bindParam(':select_date',$select_date,PDO::PARAM_STR);
 $query->bindParam(':todate',$todate,PDO::PARAM_STR);
 $query->bindParam(':comment',$comment,PDO::PARAM_STR);
 $query->bindParam(':status',$status,PDO::PARAM_STR);
@@ -34,7 +34,7 @@ $error="Something went wrong. Please try again";
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Odhiambo Atieno-  Adventures| | Package Details</title>
+<title>Sky King| | Package Details</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="applijewelleryion/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -84,7 +84,7 @@ $error="Something went wrong. Please try again";
 <?php include('includes/header.php');?>
 <div class="banner-3">
 	<div class="container">
-		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;"> Odhiambo Atieno Adventures Package Details</h1>
+		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;"> SKYKING TOURS AND TRAVEL Package Details</h1>
 	</div>
 </div>
 <!--- /banner ---->
@@ -119,12 +119,56 @@ foreach($results as $result)
 					<p><b>Features</b> <?php echo htmlentities($result->PackageFetures);?></p>
 					<div class="ban-bottom">
 				<div class="bnr-right">
-				<label class="inputLabel">From</label>
-				<input class="date" id="datepicker" type="text" placeholder="dd-mm-yyyy"  name="fromdate" required="">
+					<link rel="stylesheet" type="text/css" href="neo/css/jquery-ui.css">
+	<script src="neo/js/jquery-1.12.4.js"></script>
+	<script src="js/jquery-ui.js"></script>
+				<body>
+From: 
+<input type="text" name="select_date" placeholder="dd-mm-yyyy"  id="select_date" required="">
+<script type="text/javascript">
+$(function() {
+	$("#select_date").datepicker({
+	format: "dd/mm/yy",
+	autoclose: true,
+	todayHighlight:true,
+	showOtherMonths:true,
+	selectOthermonths:true,
+	autoclose:true,
+	changeMonth:true,
+	changeYear:true,
+	minDate:new Date()
+});
+});
+</script>
+</body>
 			</div>
+			
 			<div class="bnr-right">
-				<label class="inputLabel">To</label>
-				<input class="date" id="datepicker1" type="text" placeholder="dd-mm-yyyy" name="todate" required="">
+				<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+	<script src="js/jquery-1.12.4.js"></script>
+	<script src="js/jquery-ui.js"></script>
+</head>
+<body>
+Choose Date: 
+<input type="text" name="todate" id="todate">
+<script type="text/javascript">
+$(function() {
+	$("#todate").datepicker({
+	format: "dd/mm/yy",
+	autoclose: true,
+	todayHighlight:true,
+	showOtherMonths:true,
+	selectOthermonths:true,
+	autoclose:true,
+	changeMonth:true,
+	changeYear:true,
+	minDate:new Date()
+});
+});
+</script>
+</body>
+</script>
+</body>
 			</div>
 			</div>
 						<div class="clearfix"></div>
@@ -150,6 +194,7 @@ foreach($results as $result)
 					{?>
 						<li class="spe" align="center">
 					<button type="submit" name="submit2" class="btn-primary btn">Book</button>
+				       <?php $sql="UPDATE `tbltourpackages` SET capacity = capacity-1 WHERE `id` = '".$pkgid."' AND capacity> 0" ?>
 						</li>
 						<?php } else {?>
 							<li class="sigi" align="center" style="margin-top: 1%">

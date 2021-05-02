@@ -24,7 +24,7 @@
 				<li class="hm"><a href="admin/index.php">Admin Login</a></li>
 		</ul>
 		<ul class="tp-hd-rgt wow fadeInRight animated" data-wow-delay=".5s"> 
-			<li class="tol">Company Telephone:</li>				
+			<li class="tol">Company Telephone: +254722976480</li>				
 			<li class="sig"><a href="#" data-toggle="modal" data-target="#myModal" >Sign Up</a></li> 
 			<li class="sigi"><a href="#" data-toggle="modal" data-target="#myModal4" >/ Sign In</a></li>
         </ul>
@@ -37,7 +37,7 @@
 <div class="header">
 	<div class="container">
 		<div class="logo wow fadeInDown animated" data-wow-delay=".5s">
-			<a href="index.php">Odhiambo Atieno<span>ADVENTURES</span></a>	
+			<a href="index.php">SKY<span>KING</span> TOURS AND TRAVEL</a>	
 		</div>
 	
 		<div class="lock fadeInDown animated" data-wow-delay=".5s"> 

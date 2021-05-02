@@ -37,7 +37,7 @@ label{
 }
 /*-- top-header --*/
 .logo a {
-    color: #04b50b;
+    color: #f2dede;
     letter-spacing: 1px;
     font-size: 2em;
     font-weight: 400;
@@ -46,7 +46,7 @@ label{
     font-family: 'Oswald', sans-serif;
 }
 .logo span {
-    color:#ff0000;
+    color:#ffa700;
 }
 i.fa.fa-home {
     font-size: 24px;
@@ -91,7 +91,7 @@ li.ned,li.wrt,li.tol{
 /*-- /top-header --*/
 /*-- header --*/
 .header {
-    background-color: #fff;
+    background-color: #0e0e0e;
     margin: 0;
 	padding: 10px 0 8px;
 }
@@ -107,7 +107,7 @@ li.ned,li.wrt,li.tol{
 	padding-top: 17px;
 }
 .bus a {
-    color: #13da08;
+    color: #25ff00;
     font-weight: 600;
     font-size: 14px;
     letter-spacing: .05em;
@@ -118,7 +118,7 @@ li.ned,li.wrt,li.tol{
     margin-top: 7px;
 }
 .securetxt {
-    color: #13da08;
+    color: #fff;
     line-height: 18px;
     margin-top: 0px;
 	font-size: 14px;
@@ -128,14 +128,14 @@ li.ned,li.wrt,li.tol{
     display: inline-block;
 }
 i.fa.fa-lock {
-    color:#13da08;
+    color:#25ff00;
     font-size: 2em;
     padding-right: 10px;
 }
 /*-- /header --*/
 /*-- banner --*/
 .banner {
-    background: url(../images/Odhiambo Atieno-.jpg)no-repeat;
+    background: url(../images/Munglo-.jpg)no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
@@ -221,7 +221,7 @@ button.seabtn {
     background-position: 96% center;
 } 
 button.seabtn:focus,button.seabtn:hover{
-    background-color:#13da08;
+    background-color:#000000;
     outline: 0;
 }
 .sear {
@@ -236,7 +236,7 @@ button.seabtn:focus,button.seabtn:hover{
 }
 i.fa.fa-columns {
     font-size: 9em;
-    color: #13da08;
+    color: #000000;
 }
 /*-- /banner --*/
 /*-- rupes --*/
@@ -255,15 +255,15 @@ i.fa.fa-columns {
 }
 i.fa.fa-usd{
     font-size: 5em;
-    color: #13da08;
+    color: #000000;
 }
 i.fa.fa-h-square{
     font-size: 5em;
-    color: #13da08;
+    color: #000000;
 }
 i.fa.fa-mobile  {
     font-size:5em;
-    color: #13da08;
+    color: #000000;
 }
 .rupes h3 {
     font-size: 20px;
@@ -304,7 +304,7 @@ a.learn{
     display: inline-block;
 }
 a.learn:focus,a.learn:hover {
-    background-color: #13da08;
+    background-color: #000000;
     outline: 0;
 }
 .track {
@@ -352,7 +352,7 @@ i.fa.fa-map-marker {
 }
 i.fa.fa-truck,i.fa.fa-user,i.fa.fa-ticket {
     font-size: 4em;
-	color:#13da08;
+	color:#000000;
 }
 .routes h3 {
     font-size: 2em;
@@ -394,7 +394,7 @@ i.fa.fa-truck,i.fa.fa-user,i.fa.fa-ticket {
     display: inline-block;
 }
 .footer-left li a:hover{
-    color:#13da08;
+    color:#000000;
 }
 .footer-top h3 {
     font-size: 1.7em;
@@ -438,7 +438,7 @@ i.fa.fa-truck,i.fa.fa-user,i.fa.fa-ticket {
     color:#000000;
 }
 .copy-right {
-    background:#14a90c;
+    background:#000000;
     text-align: center;
     padding: 0.5em 0;
 }
@@ -613,7 +613,7 @@ ul.first {
 .about h5 {
     font-size: 1.1em;
     text-align:right;
-    color: #13da08;
+    color: #000000;
 }
 .about h6 {
     font-size: 1em;
@@ -660,7 +660,7 @@ ul.first {
     float: left;
 }
 ul.rout {
-    background: #13da08;
+    background: #000000;
     padding: 0.8em;
     color: #fff;
 }
@@ -747,7 +747,7 @@ a.off{
 	background:orange;
 }
 a.off:hover{
-	background:#13da08;
+	background:#000000;
 }
 .offers-1-left {
     padding: 2em;
@@ -759,7 +759,7 @@ a.off:hover{
 }
 i.fa.fa-gift{
 	font-size: 5em;
-    color: #13da08;
+    color: #000000;
 }
 /*-- /offers-1 --*/
 /*-- hotels --*/
@@ -929,7 +929,7 @@ i.fa.fa-gift{
 }
 .Services h6 {
     font-size: 1.2em;
-    color: #13da08;
+    color: #000000;
     font-weight: 700;
     margin: 1em 0;
 }
@@ -986,7 +986,7 @@ a.regist {
     display: inline-block;
 }
 a.regist:hover{
-	background-color:#13da08;
+	background-color:#000000;
 }
 .agent-left textarea {
     width: 80%;
@@ -1016,7 +1016,7 @@ a.regist:hover{
     border-radius: 2px;
 }
 .agent-left input[type="submit"]:hover{
-    background: #13da08;
+    background: #000000;
 }
 .sub {
     text-align: right;
@@ -1059,7 +1059,7 @@ select {
 }
 .contact h4 {
     font-size: 1.4em;
-    color: #13da08;
+    color: #000000;
     margin-bottom:0.6em;
     font-weight: 700;
 }
@@ -1082,7 +1082,7 @@ select {
     color: black;
 }
 span.glyphicon.glyphicon-eye-open, span.glyphicon.glyphicon-thumbs-up {
-    color: #13da08;
+    color: #000000;
     font-size: 1.1em;
     padding-right: 6px;
 }
@@ -1095,7 +1095,7 @@ span.glyphicon.glyphicon-eye-open, span.glyphicon.glyphicon-thumbs-up {
 .details-top h5 {
     font-size: 1.4em;
     font-weight: 700;
-    color: #13da08;
+    color: #000000;
 }
 .details-top {
     margin-top: 2em;
@@ -1217,7 +1217,7 @@ span.glyphicon.glyphicon-eye-open, span.glyphicon.glyphicon-thumbs-up {
 	width: 14px;
     height: 14px;
     display: inline-block;
-    border: 2px solid #4CB320;
+    border: 2px solid #0c0c0c;
     position: absolute;
     left: 0;
     top: 4px;
@@ -1447,7 +1447,7 @@ button.subbtn {
     background-position: 96% center;
 }
 button.subbtn:focus, button.subbtn:hover {
-    background-color: #13da08;
+    background-color: #000000;
     outline: 0;
 }
 /*-- /write --*/
@@ -1491,7 +1491,7 @@ button.subbtn:focus, button.subbtn:hover {
 	width:51%;
 }
 .login-right h3{
-    color: #4CB320;
+    color: #0c0c0c;
     font-weight: normal;
     font-size: 17px;
 
@@ -1517,17 +1517,17 @@ button.subbtn:focus, button.subbtn:hover {
 	margin:20px 0;
 }
 .login-right h4 a{
-	color:#4CB320;
+	color:#0c0c0c;
 	text-decoration:none;
 }
 .login-right h4 a:hover{
 	color:#A9A8A8;
 }
 .login-grids p a {
-	color:#4CB320;
+	color:#0c0c0c;
 }
 .login-right input[type="submit"] {
-  background:#4CB320;
+  background:#0c0c0c;
   color: #fff;
   font-size: 20px;
   border: none;
@@ -1770,14 +1770,14 @@ ul.callbacks_tabs.callbacks2_tabs {
 /*-- blog --*/
 .comments-list h3{
 	font-size:2em;
-	color:#4CB320;
+	color:#0c0c0c;
 	margin:0 0 1em;
 	text-transform:capitalize;
 	text-decoration: none;
 	line-height: 1.3em;
 }
 .comments-list h3 a{
-	color:#4CB320;
+	color:#0c0c0c;
 }
 .comments-list h3 a:hover{
 	color:#3F84B1;
@@ -1796,10 +1796,10 @@ ul.callbacks_tabs.callbacks2_tabs {
 }
 .comments-list ul li span {
     padding-right: 10px;
-    color: #13da08;
+    color: #000000;
 }
 .comments-list ul li a:hover{
-	color:#4CB320;
+	color:#0c0c0c;
 }
 .comments-list ul li i{
 	margin:0 1em;
@@ -1844,7 +1844,7 @@ ul.paging{
 	width:80%;
 }
 .popular-left h4{
-	color:#4CB320;
+	color:#0c0c0c;
 	font-size:1.5em;
 	margin:0;
 }
@@ -1894,7 +1894,7 @@ ul.paging{
 .subscribe input[type="submit"]{
 	outline:none;
 	border:none;
-	background:#4CB320;
+	background:#0c0c0c;
 	font-size:1em;
 	color:#fff;
 	padding:10px 0;
@@ -1916,7 +1916,7 @@ ul.paging{
     text-transform: capitalize;
 }
 .categories ul li a:hover{
-    color: #4CB320;
+    color: #0c0c0c;
 }
 .instagram-grid{
 	float:left;
@@ -1937,13 +1937,13 @@ ul.paging{
     text-decoration: none;
 }
 .recent-comments h3 {
-    color: #4CB320;
+    color: #0c0c0c;
     font-size: 1.5em;
 }
 .tags ul li a:hover{
-	border: 1px solid #4CB320;
+	border: 1px solid #0c0c0c;
     color: #fff;
-	background:#4CB320;
+	background:#0c0c0c;
 }
 .blog {
     padding: 5em 0;
@@ -1974,7 +1974,7 @@ ul.paging{
 	line-height:1.8em;
 }
 .admin-right p a{
-	color: #4CB320;
+	color: #0c0c0c;
     text-decoration: none;
     display: block;
     margin: 1em 0 0;
@@ -1993,7 +1993,7 @@ ul.paging{
     text-decoration: none;
 }
 .recent-comments-grid-right h4 a:hover{
-	color:#4CB320;
+	color:#0c0c0c;
 }
 .recent-comments-grid-right p{
 	margin:1em 0 0;
@@ -2004,7 +2004,7 @@ ul.paging{
 .recent-comments-grid-right p span{
 	display:block;
 	margin:1em 0 0;
-	color:#4CB320;
+	color:#0c0c0c;
 }
 .recent-comments-grid-right{
 	float:right;
@@ -2051,7 +2051,7 @@ ul.paging{
 	outline:none;
 	padding:10px 0;
 	width:100%;
-	background:#4CB320;
+	background:#0c0c0c;
 	border:none;
 	font-size:1em;
 	color:#fff;
@@ -2081,7 +2081,7 @@ ul.paging{
     padding: 5px;
     font-size: 14px;
     border-radius: 2px;
-    background:#13da08;
+    background:#000000;
     visibility: hidden;
     opacity: 0;
     -o-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -2095,7 +2095,7 @@ ul.paging{
     height: 0;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-top: 5px solid #13da08;
+    border-top: 5px solid #000000;
     position: absolute;
     bottom: -5px;
     left: 34px;
@@ -2352,7 +2352,7 @@ button.seabtn {
 .faq h3 {
     font-size: 1.5em;
 }
-.banner-1 h1,.banner-2 h1,.banner-3 h1 {
+.banner-1 h1,.banner-2 h1,.banner-3 h1,.banner-4 h1 {
     padding: 1.8em 0 0;
     font-size: 46px;
 }
@@ -2539,7 +2539,7 @@ i.fa.fa-truck, i.fa.fa-user, i.fa.fa-ticket {
 .footer-top {
     padding: 1em 0 3em;
 }
-.banner-1 h1,.banner-2 h1,.banner-3 h1 {
+.banner-1 h1,.banner-2 h1,.banner-3 h1,.banner-4 h1 {
     padding: 1.8em 0 0;
     font-size: 43px;
 }
@@ -2744,20 +2744,20 @@ li.seat {
 	margin-right: 0px;
 }
 .navbar-default .navbar-toggle {
-    border-color: #4CB320;
+    border-color: #0c0c0c;
 }
 .navbar-toggle .icon-bar {
     width: 26px;
     height: 3px;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background-color: #4CB320;
+    background-color: #0c0c0c;
 }
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #fff;
 }
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    border-color: #4CB320;
+    border-color: #0c0c0c;
 }
 ul.nav.navbar-nav li a {
     font-size: 15px;
@@ -2770,7 +2770,7 @@ ul.nav.navbar-nav li a {
 nav.cl-effect-1 {
     padding: 0em 0 1em;
 }
-.banner-1 h1,.banner-2 h1,.banner-3 h1 {
+.banner-1 h1,.banner-2 h1,.banner-3 h1,.banner-4 h1 {
     padding: 1.5em 0 0;
     font-size: 40px;
 }
@@ -2829,7 +2829,7 @@ i.fa.fa-h-square,i.fa.fa-usd,i.fa.fa-mobile {
 i.fa.fa-truck, i.fa.fa-user, i.fa.fa-ticket {
     font-size: 2.2em;
 }
-.banner-1 h1,.banner-2 h1,.banner-3 h1 {
+.banner-1 h1,.banner-2 h1,.banner-3 h1,.banner-4 h1 {
     padding: 1.2em 0 0;
     font-size: 36px;
 }
@@ -2919,7 +2919,7 @@ i.fa.fa-lock {
 .bann-info1 h3 {
     font-size: 1.4em;
 }
-.banner-1 h1,.banner-3 h1{
+.banner-1 h1,.banner-3 h1,.banner-4 h1{
     padding: 1.7em 0 0;
     font-size:30px;
 }
@@ -2943,6 +2943,9 @@ i.fa.fa-lock {
     font-size: 30px;
 }
 .banner-3 {
+    min-height: 190px;
+}
+.banner-4 {
     min-height: 190px;
 }
 .rt-left {
@@ -3196,7 +3199,7 @@ li.hm, li.prnt {
 .faq {
     padding: 2em 0;
 }
-.banner-1 h1,.banner-2 h1,.banner-3 h1{
+.banner-1 h1,.banner-2 h1,.banner-3 h1,.banner-4 h1{
     font-size: 26px;
 }
 .agent-right iframe {
@@ -3454,7 +3457,7 @@ ul.tp-hd-lft a {
 .faq h3 {
     font-size: 1.4em;
 }
-.banner h1,.banner-2 h1,.banner-3 h1 {
+.banner h1,.banner-2 h1,.banner-3 h1,.banner-4 h1 {
     padding: 2.7em 0 0;
     font-size: 22px;
 }
@@ -3836,7 +3839,7 @@ p.aval {
 li.ned, li.wrt, li.tol {
     margin-right: 6px;
 }
-.banner h1,.banner-2 h1,.banner-3 h1 {
+.banner h1,.banner-2 h1,.banner-3 h1,.banner-4 h1 {
     padding: 1.7em 0 0;
     font-size: 25px;
 }

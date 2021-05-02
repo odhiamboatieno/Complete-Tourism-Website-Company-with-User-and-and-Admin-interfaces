@@ -11,7 +11,7 @@ if(isset($_REQUEST['bkid']))
 	{
 		$bid=intval($_GET['bkid']);
 $email=$_SESSION['login'];
-	$sql ="SELECT FromDate FROM tblbooking WHERE UserEmail=:email and BookingId=:bid";
+	$sql ="SELECT select_date FROM tblbooking WHERE UserEmail=:email and BookingId=:bid";
 $query= $dbh -> prepare($sql);
 $query-> bindParam(':email', $email, PDO::PARAM_STR);
 $query-> bindParam(':bid', $bid, PDO::PARAM_STR);
@@ -21,7 +21,7 @@ if($query->rowCount() > 0)
 {
 foreach($results as $result)
 {
-	 $fdate=$result->FromDate;
+	 $fdate=$result->select_date;
 
 	$a=explode("/",$fdate);
 	$val=array_reverse($a);
@@ -57,7 +57,7 @@ $error="You can't cancel booking before 24 hours";
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Odhiambo Atieno-  Adventures| Tour and Travel</title>
+<title>Sky King| Tour and Travel</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Tourism Management System In PHP" />
@@ -103,7 +103,7 @@ $error="You can't cancel booking before 24 hours";
 <?php include('includes/header.php');?>
 <div class="banner-1 ">
 	<div class="container">
-		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">Odhiambo Atieno Adventures</h1>
+		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">SKYKING TOURS AND TRAVEL</h1>
 	</div>
 </div>
 <!--- /banner-1 ---->
@@ -130,7 +130,7 @@ $error="You can't cancel booking before 24 hours";
 <?php 
 
 $uemail=$_SESSION['login'];;
-$sql = "SELECT tblbooking.BookingId as bookid,tblbooking.PackageId as pkgid,tbltourpackages.PackageName as packagename,tblbooking.FromDate as fromdate,tblbooking.ToDate as todate,tblbooking.Comment as comment,tblbooking.status as status,tblbooking.RegDate as regdate,tblbooking.CancelledBy as cancelby,tblbooking.UpdationDate as upddate from tblbooking join tbltourpackages on tbltourpackages.PackageId=tblbooking.PackageId where UserEmail=:uemail";
+$sql = "SELECT tblbooking.BookingId as bookid,tblbooking.PackageId as pkgid,tbltourpackages.PackageName as packagename,tblbooking.select_date as select_date,tblbooking.ToDate as todate,tblbooking.Comment as comment,tblbooking.status as status,tblbooking.RegDate as regdate,tblbooking.CancelledBy as cancelby,tblbooking.UpdationDate as upddate from tblbooking join tbltourpackages on tbltourpackages.PackageId=tblbooking.PackageId where UserEmail=:uemail";
 $query = $dbh->prepare($sql);
 $query -> bindParam(':uemail', $uemail, PDO::PARAM_STR);
 $query->execute();
@@ -144,7 +144,7 @@ foreach($results as $result)
 <td><?php echo htmlentities($cnt);?></td>
 <td>#BK<?php echo htmlentities($result->bookid);?></td>
 <td><a href="package-details.php?pkgid=<?php echo htmlentities($result->pkgid);?>"><?php echo htmlentities($result->packagename);?></a></td>
-<td><?php echo htmlentities($result->fromdate);?></td>
+<td><?php echo htmlentities($result->select_date);?></td>
 <td><?php echo htmlentities($result->todate);?></td>
 <td><?php echo htmlentities($result->comment);?></td>
 <td><?php if($result->status==0)

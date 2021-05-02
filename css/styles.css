@@ -167,16 +167,8 @@ label{
 }
 /*-- //banner-text --*/
 /*-- banner-top --*/
-.w3layouts-banner-top{
-    background: url(../images/1.jpg) no-repeat 0px 0px;
-    background-size: cover;	
-	-webkit-background-size: cover;	
-	-moz-background-size: cover;
-	-o-background-size: cover;		
-	-moz-background-size: cover;
-}
 .w3layouts-banner-top1{
-	background: url(../images/2.jpg) no-repeat 0px 0px;
+    background: url(../images/0.jpg) no-repeat 0px 0px;
     background-size: cover;	
 	-webkit-background-size: cover;	
 	-moz-background-size: cover;
@@ -184,6 +176,22 @@ label{
 	-moz-background-size: cover;
 }
 .w3layouts-banner-top2{
+    background: url(../images/1.jpg) no-repeat 0px 0px;
+    background-size: cover;	
+	-webkit-background-size: cover;	
+	-moz-background-size: cover;
+	-o-background-size: cover;		
+	-moz-background-size: cover;
+}
+.w3layouts-banner-top3{
+	background: url(../images/2.jpg) no-repeat 0px 0px;
+    background-size: cover;	
+	-webkit-background-size: cover;	
+	-moz-background-size: cover;
+	-o-background-size: cover;		
+	-moz-background-size: cover;
+}
+.w3layouts-banner-top4{
 	background: url(../images/3.jpg) no-repeat 0px 0px;
     background-size: cover;	
 	-webkit-background-size: cover;	
@@ -191,7 +199,7 @@ label{
 	-o-background-size: cover;		
 	-moz-background-size: cover;	
 }
-.w3layouts-banner-top,.w3layouts-banner-top1,.w3layouts-banner-top2{
+.w3layouts-banner-top1,.w3layouts-banner-top2,.w3layouts-banner-top3,.w3layouts-banner-top4{
 	min-height:700px;
 }
 .w3ls-banner {
@@ -200,7 +208,8 @@ label{
 /*-- //banner-top --*/ 
 /*--slider--*/
 #slider2,
-#slider3 {
+#slider3 ,
+#slider4{
   box-shadow: none;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;

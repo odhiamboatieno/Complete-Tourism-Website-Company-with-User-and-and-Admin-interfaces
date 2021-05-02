@@ -1,6 +1,6 @@
 <div class="header-main">
 					<div class="logo-w3-agile">
-								<h1><a href="dashboard.php">Odhiambo Atieno-  Adventures ADMIN PANEL</a></h1>
+								<h1><a href="dashboard.php">SKY KING ADMIN PANEL</a></h1>
 							</div>
 				
 						
@@ -11,7 +11,7 @@
 											<div class="profile_img">	
 												<span class="prfil-img"><img src="images/User-icon.png" alt=""> </span> 
 												<div class="user-name">
-													<p>Welcome Odhiambo Atieno-</p>
+													<p>Welcome SkyKing</p>
 													<span> Administrator</span>
 												</div>
 												<i class="fa fa-angle-down"></i>

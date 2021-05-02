@@ -15,9 +15,10 @@ $plocation=$_POST['packagelocation'];
 $pprice=$_POST['packageprice'];	
 $pfeatures=$_POST['packagefeatures'];
 $pdetails=$_POST['packagedetails'];	
+$pcapacity=$_POST['packagecapacity'];	
 $pimage=$_FILES["packageimage"]["name"];
 move_uploaded_file($_FILES["packageimage"]["tmp_name"],"pacakgeimages/".$_FILES["packageimage"]["name"]);
-$sql="INSERT INTO TblTourPackages(PackageName,PackageType,PackageLocation,PackagePrice,PackageFetures,PackageDetails,PackageImage) VALUES(:pname,:ptype,:plocation,:pprice,:pfeatures,:pdetails,:pimage)";
+$sql="INSERT INTO TblTourPackages(PackageName,PackageType,PackageLocation,PackagePrice,PackageFetures,PackageDetails,capacity,PackageImage) VALUES(:pname,:ptype,:plocation,:pprice,:pfeatures,:pdetails,:pcapacity,:pimage)";
 $query = $dbh->prepare($sql);
 $query->bindParam(':pname',$pname,PDO::PARAM_STR);
 $query->bindParam(':ptype',$ptype,PDO::PARAM_STR);
@@ -25,6 +26,7 @@ $query->bindParam(':plocation',$plocation,PDO::PARAM_STR);
 $query->bindParam(':pprice',$pprice,PDO::PARAM_STR);
 $query->bindParam(':pfeatures',$pfeatures,PDO::PARAM_STR);
 $query->bindParam(':pdetails',$pdetails,PDO::PARAM_STR);
+$query->bindParam(':pcapacity',$pcapacity,PDO::PARAM_STR);
 $query->bindParam(':pimage',$pimage,PDO::PARAM_STR);
 $query->execute();
 $lastInsertId = $dbh->lastInsertId();
@@ -43,7 +45,7 @@ $error="Something went wrong. Please try again";
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Odhiambo Atieno-  Adventures|Admin Package Creation</title>
+<title>Sky KingAdmin Package Creation</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Pooled Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -142,7 +144,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<div class="col-sm-8">
 										<textarea class="form-control" rows="5" cols="50" name="packagedetails" id="packagedetails" placeholder="Package Details" required></textarea> 
 									</div>
-								</div>															
+								</div>		
+<div class="form-group">
+									<label for="focusedinput" class="col-sm-2 control-label">Package Capacity</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control1" name="packagecapacity" id="packagecapacity" placeholder=" How many people can be accomodated" required>
+									</div>
+								</div>								
 <div class="form-group">
 									<label for="focusedinput" class="col-sm-2 control-label">Package Image</label>
 									<div class="col-sm-8">

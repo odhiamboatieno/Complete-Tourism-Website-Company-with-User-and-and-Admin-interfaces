@@ -1,0 +1,5 @@
+Database Name : - Odhiambo.sql
+user name : - Admin
+password  : - 1234
+
+ENJOY DDDD

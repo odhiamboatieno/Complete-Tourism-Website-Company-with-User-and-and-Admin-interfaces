@@ -6,7 +6,7 @@ include('includes/config.php');
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Odhiambo Atieno-  Adventures| | Package List</title>
+<title>Sky King| | Package List</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="applijewelleryion/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -32,7 +32,7 @@ include('includes/config.php');
 <!--- banner ---->
 <div class="banner-3">
 	<div class="container">
-		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;"> MungloAdventures- Package List</h1>
+		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;"> SkyKing Tours- Package List</h1>
 	</div>
 </div>
 <!--- /banner ---->
@@ -62,6 +62,7 @@ foreach($results as $result)
 					<h6>Package Type : <?php echo htmlentities($result->PackageType);?></h6>
 					<p><b>Package Location :</b> <?php echo htmlentities($result->PackageLocation);?></p>
 					<p><b>Features</b> <?php echo htmlentities($result->PackageFetures);?></p>
+					<p><b>Remaining Space</b> <?php echo htmlentities($result->capacity);?></p>
 				</div>
 				<div class="col-md-3 room-right wow fadeInRight animated" data-wow-delay=".5s">
 					<h5>USD <?php echo htmlentities($result->PackagePrice);?></h5>

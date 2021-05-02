@@ -29,7 +29,7 @@ $msg="Package Created Successfully";
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Odhiambo Atieno Advenures Admin Package Creation</title>
+<title>SkyKing Tours Admin Package Creation</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Pooled Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
