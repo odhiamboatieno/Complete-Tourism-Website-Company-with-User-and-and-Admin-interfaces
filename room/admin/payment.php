@@ -119,7 +119,7 @@ if(!isset($_SESSION["user"]))
                                             <th>Room Rent</th>
 											<th>Bed Rent</th>
 											<th>Meals </th>
-											<th>Gr.Total</th>
+											<th>Grand.Total</th>
 											<th>Print</th>
                                             
                                         </tr>
