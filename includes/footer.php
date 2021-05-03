@@ -14,6 +14,6 @@
 				
 			</ul>
 		</div>
-		<p class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">© 2019 Sky King Tours And Travel. All Rights Reserved </p> <p>Powered By<a href="http://tirotech.co.ke/"> Tiro Tech Solutions</a>
+		<p class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">© 2019 Sky King Tours And Travel. All Rights Reserved </p> <p>Powered By<a href="https://seentechs.com/"> Odhiambo Atieno</a>
 	</div>
 </div>
