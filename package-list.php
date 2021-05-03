@@ -62,7 +62,7 @@ foreach($results as $result)
 					<h6>Package Type : <?php echo htmlentities($result->PackageType);?></h6>
 					<p><b>Package Location :</b> <?php echo htmlentities($result->PackageLocation);?></p>
 					<p><b>Features</b> <?php echo htmlentities($result->PackageFetures);?></p>
-					<p><b>Remaining Space</b> <?php echo htmlentities($result->capacity);?></p>
+					<p><b>Vaccancies Remaining</b> <?php echo htmlentities($result->capacity);?></p>
 				</div>
 				<div class="col-md-3 room-right wow fadeInRight animated" data-wow-delay=".5s">
 					<h5>USD <?php echo htmlentities($result->PackagePrice);?></h5>
